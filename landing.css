@@ -1,0 +1,45 @@
+html{
+	background:url('images/376.jpg');
+	background-size:cover;
+}
+
+.welcome-text{
+	font-weight: bold;
+    font-size: 2rem;
+    position: absolute;
+    left: 65%;
+    top: 12rem;
+    color:#ffffff;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+html{
+	background:url('images/376.jpg') no-repeat center center fixed  ;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+     background-size: cover;
+}
+
+.welcome-text h1 {
+	display:none;
+}
+
+.welcome-text{
+    left:5rem;
+    top: 30rem;
+    color:#ffffff;
+}
+
+}
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+ .welcome-text{
+    left:65%;
+    top: 20rem;
+    color:#ffffff;
+}
+}

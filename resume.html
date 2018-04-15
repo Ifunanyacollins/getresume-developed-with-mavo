@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Resume</title>
+	  <link rel="stylesheet" type="text/css" href="materialize/css/materialize.css">
+	  <link rel="stylesheet" href="https://get.mavo.io/mavo.css"/>
+      <script src="https://get.mavo.io/mavo.js"></script>
+      <link rel="stylesheet" type="text/css" href="resume.css">
+</head>
+<body mv-app id="resumegen2" mv-storage="local" mv-autosave="0">
+<a href="#" class="waves-effect waves-light btn red darken-1" onclick="HTMLtoPDF()">Download Resume</a>
+<a class="waves-effect waves-light btn modal-trigger" href="#modal1">Learn</a>
+
+    <div class="container" id="HTMLtoPDF" >
+    	<div class="frame">
+    		<div class="introduction">
+    			<h1 class="center-align" property="name" style="    margin-right: 10rem;">Favour Ori</h1>
+    			<div class="contact" >
+    		    <p><span property="email">favourori96@gmail.com</span>-
+    		       <span property="number">(870) 949-1574</span>-
+    		       <span property="website">www.favourori.com</span>-
+    		      <span property="linkedin">linkedin.com/in/favourori/</span>-
+    		       <span property="github">github.com/orifavour</span>
+    		    </p>
+    			</div>
+    		</div>
+    		<div  style="font-size:2.1rem;font-weight:bold;">------------------------------------------------------------</div>
+             
+             <div class="body">
+             	<p class="black-text darken-4" style="font-weight:bold">TECHNICAL SKILLS</p>
+             	<div  class="align-well">
+      <strong class="black-text darken-4" >Programming Langauge:</strong>
+      <p property="ProgrammingLangauge" >Java, Swift, Python, Javascript, PHP, Ruby, Rails</p>
+            
+         
+
+      <strong class="black-text darken-4" >Frameworks:</strong>
+      <p property="Frameworks" >Bootstrap, Materialize, Rails</p>
+      
+      <strong class="black-text darken-4" >Tools:</strong>
+      <p property="tools" >Git, Sketch, Github, Craft by Invision, Andriod Studio, Xcode</p>
+      
+
+      <strong class="black-text darken-4" >Database:</strong>
+      <p property="databae" >MySQL, SQLite</p>
+
+      <strong class="black-text darken-4" >Intrest:</strong>
+      <p property="intrest" >Software Development, Web Development, Machine Learning, Internet of Things
+</p>
+         
+             	</div>
+             	
+
+             	  <p class="black-text darken-4" style="font-weight:bold">PROJECTS</p>
+             	  <div class="align-well" property="projects" mv-multiple>
+             	  	
+             	 <span class="black-text darken-3" property="titleofproject">iOS App. Bethel Church, Magnolia</span>
+             	  		 <p property="description">Designed an iOS app for Bethel Church, to reduce printing of bulletins, and to let members have
+                         direct access to podcasts, upcoming events etc. Technologies: Swift, MySQL, PHP</p>
+             	  </ul>
+             	  </div>
+             	  
+
+
+
+              <p class="black-text darken-4" style="font-weight:bold">PROFFESIONAL EXPERIENCE</p>
+                   <div class="align-well" property="EXPERIENCE" mv-multiple>
+                   	<span class="black-text darken-3" property="title">Software Developer, Southern Arkansas University, Magnolia, AR</span>
+                   <p property="description">Working closely with my professors on various researches & projects Technologies: Xcode, Swift,
+                   Java, HTML5, CSS3, PHP
+                   </p>
+                   </div>
+                  
+
+                 <p class="black-text darken-4" style="font-weight:bold">INVOLVEMENT</p>
+                  <div class="align-well">  
+                 <p property="INVOLVEMENT" mv-multiple>Volunteer, Magnolia Blossom, OCT 2016</p>
+                 </div>
+              
+                 
+                 <p class="black-text darken-4" style="font-weight:bold">EDUCTION</p>
+                 <table>
+        <thead>
+          <tr>
+              <th>Certificate</th>
+              <th>Major</th>
+              <th>Institution </th>
+              <th>graduation Year</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr property="education" mv-multiple>
+            <td property="Certificate">WAEC</td>
+            <td property="Major">SSCE</td>
+            <td  property="Institution ">12 Apostles college</td>
+            <td property="graduation Year">2007</td>
+          </tr>
+        </tbody>
+                 </table>
+             </div>
+    	</div>
+    </div>
+  <!-- modals for onboarding -->
+  <!-- Modal Trigger -->
+  
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+  <video class="responsive-video" src="onboard.mp4" controls  poster="images/taptoedit.png">
+Sorry, your browser doesn't support embedded videos, 
+but don't worry, you can <a href="onboard.mp4" download>download it</a>
+and watch it with your favorite video player!
+</video>
+    </div>
+      
+  </div>
+          
+
+  <!-- scripts -->
+<script type="text/javascript" src ="jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="jspdf.js"></script>
+<script type="text/javascript" src="pdfFromHTML.js"></script>
+<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+</body>
+<script type="text/javascript">
+	
+  $(document).ready(function(){
+    $('.modal').modal();
+  });
+        
+</script>
+</html>

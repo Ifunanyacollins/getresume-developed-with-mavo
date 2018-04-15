@@ -1,0 +1,47 @@
+.frame{
+	height:100vh;
+	width:70vw;
+	background-color:#ffffff;
+	padding:10px;
+}
+
+/* .contact{
+	margin-left: 10.2rem;
+}
+
+.contact span{
+	margin-left:1.0rem;
+} */
+
+.divider{
+	height:30px;
+	margin-top:5rem;
+}
+
+ul li span{
+	margin-left:1.1rem;
+
+}
+
+.align-well{
+	margin-left:10rem;
+}
+
+ul li{
+	margin-top:1.1rem;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-color: #fafafa;
+    padding: 0;
+    height: auto;
+    width: 70%;
+    margin: auto;
+    overflow-y: auto;
+    border-radius: 2px;
+    will-change: top, opacity;
+}
